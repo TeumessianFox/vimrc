@@ -86,6 +86,10 @@ nnoremap <C-c> :Ag<CR>
 " https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='simple'
 
+" gitgutter
+" sign column colour to terminal default
+highlight! link SignColumn LineNr
+
 
 " ##########################
 " Whitespaces
