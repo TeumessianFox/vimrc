@@ -94,6 +94,7 @@ highlight! link SignColumn LineNr
 " ##########################
 " Whitespaces
 set tabstop=4                               " number of visual spaces per TAB
+set shiftwidth=4                            " number of spaces when using >
 set softtabstop=4                           " number of spaces in tab when editing
 set shiftround                              " when shifting lines, round the indentation to the nearest multiple of “shiftwidth.”
 set expandtab                               " tabs are spaces
