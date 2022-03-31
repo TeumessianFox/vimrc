@@ -1,0 +1,88 @@
+set encoding=utf-8
+
+" ##########################
+" The ':syntax enable' command will keep your current color settings.
+" enable syntax processing
+syntax enable
+
+
+" ##########################
+" leader is comma
+let mapleader=","
+
+
+" ##########################
+" Whitespaces
+set tabstop=4                               " number of visual spaces per TAB
+set shiftwidth=4                            " number of spaces when using >
+set softtabstop=4                           " number of spaces in tab when editing
+set shiftround                              " when shifting lines, round the indentation to the nearest multiple of “shiftwidth.”
+set expandtab                               " tabs are spaces
+set wrap                                    " enable line wrapping
+set linebreak                               " avoid wrapping a line in the middle of a word
+set list listchars=tab:»·,trail:·,nbsp:·    " display extra whitespace
+
+
+" ##########################
+" Visual vim
+set number                                  " show line numbers
+set numberwidth=4
+set cursorline                              " highlight current line
+set wildmenu                                " visual autocomplete for command menu
+set showcmd                                 " show command in bottom bar
+
+
+" ##########################
+" Speed-ups
+set lazyredraw                              " redraw only when we need to do
+set ttyfast                                 " indicates fast terminal connection
+
+
+" ##########################
+" Highlighting
+set showmatch                               " highlight matching [{()}]
+
+
+" ##########################
+" Search
+set incsearch                               " search as characters are entered
+
+
+" ##########################
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
+
+
+" ##########################
+" Remapping
+
+" Mapping jk to ESC
+:imap jk <Esc>
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" move vertically by visual line (if lines are longer than one visual line)
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" $/^ doesn't do anything
+nnoremap $ <nop>
+nnoremap ^ <nop>
+
+" Paste mode without any auto-indentation
+set pastetoggle=<F2>
