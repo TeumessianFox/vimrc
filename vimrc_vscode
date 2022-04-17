@@ -59,6 +59,8 @@ set splitright
 
 " Mapping jk to ESC
 :imap jk <Esc>
+inoremap jk <Esc>
+vnoremap jk <Esc>
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
